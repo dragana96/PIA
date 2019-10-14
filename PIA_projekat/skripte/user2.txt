@@ -1,0 +1,14 @@
+{
+  
+    "korime" : "mare",
+    "lozinka" : "Mare123$",
+    "ime" : "Marko",
+    "prezime" : "Markovic",
+    "telefon" : "0648569321",
+    "mail" : "mare@mail.com",
+    "tip" : "student",
+    "godinaStudija" : "4",
+    "diplomirao" : "ne",
+    "putanjaSlika" : "http://localhost:3000/images/mare.jpg",
+    "__v" : 0
+}

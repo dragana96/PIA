@@ -1,0 +1,9 @@
+{
+
+    "pozicija" : "LEAD SOFTWARE ENGINEER",
+    "tekst" : "As a Lead Software Engineer, you will be leading a group of engineers within a small and independent game team. You will be working closely with leads from other disciplines (art, game design and product management etc.), and together guiding the team through new challenges on current and not-yet-existing games. This is a chance to join one of Europe’s most successful studios as its growth reaches a critical point of inflection.",
+    "datum" : "2019-02-15T02:00:08.000Z",
+    "tipKonkursa" : "zaposlenje",
+    "kompanija" : "Nordeus",
+    "__v" : 0
+}

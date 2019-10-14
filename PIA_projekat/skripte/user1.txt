@@ -1,0 +1,10 @@
+{
+    
+    "ime" : "Nikola",
+    "prezime" : "Nikolic",
+    "korime" : "nikola",
+    "lozinka" : "nikola123",
+    "mail" : "nikola@gmail.com",
+    "telefon" : "0641234587",
+    "tip" : "admin"
+}

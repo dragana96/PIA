@@ -1,0 +1,69 @@
+{
+ 
+    "radnaIskustva" : [ 
+        {
+            "radnoIskustvoOd" : "2015-01-09T23:00:00.000Z",
+            "radnoIskustvoDo" : "2017-02-03T23:00:00.000Z",
+            "radnoIskustvoPozicija" : "IT Tehnicka podrška",
+            "radnoIskustvoAktivnosti" : " Instalacija i konfiguracija racunara, obuka zaposlenih u banci za korišcenje softvera ",
+            "radnoIskustvoPoslodavac" : "Instruments Support Company",
+            "radnoIskustvoAdresa" : "Ugrinovacka 37",
+            "radnoIskustvoSajt" : "isc.com"
+        }, 
+        {
+            "radnoIskustvoOd" : "2017-03-08T23:00:00.000Z",
+            "radnoIskustvoDo" : "2019-01-31T23:00:00.000Z",
+            "radnoIskustvoPozicija" : " Rukovodilac prodaje",
+            "radnoIskustvoAktivnosti" : "Identifikovanje potreba potrošaca ",
+            "radnoIskustvoPoslodavac" : "Monitor Publikacije ",
+            "radnoIskustvoAdresa" : "Krunska 26",
+            "radnoIskustvoSajt" : "mp.com"
+        }
+    ],
+    "obrazovanja" : [ 
+        {
+            "obrazovanjeOd" : "2003-08-31T22:00:00.000Z",
+            "obrazovanjeDo" : "2011-07-23T22:00:00.000Z",
+            "obrazovanjeUstanova" : "OS Jovan Sterija Popovic",
+            "obrazovanjeGrad" : "Beograd",
+            "obrazovanjeAdresa" : "Nehruova"
+        }, 
+        {
+            "obrazovanjeOd" : "2011-08-31T22:00:00.000Z",
+            "obrazovanjeDo" : "2015-06-24T22:00:00.000Z",
+            "obrazovanjeUstanova" : "Deveta gimnazija \"Mihailo Petrovic Alas\"",
+            "obrazovanjeGrad" : "Beograd",
+            "obrazovanjeAdresa" : "Pariske komune"
+        }, 
+        {
+            "obrazovanjeOd" : "2015-06-30T22:00:00.000Z",
+            "obrazovanjeDo" : "2019-02-09T23:00:00.000Z",
+            "obrazovanjeUstanova" : "Elektrotehnicki fakultet",
+            "obrazovanjeGrad" : "Beograd",
+            "obrazovanjeAdresa" : "Bulevar Kralja Aleksandra 73"
+        }, 
+        {
+            "obrazovanjeOd" : "2019-02-03T23:00:00.000Z",
+            "obrazovanjeDo" : "2019-02-02T23:00:00.000Z",
+            "obrazovanjeUstanova" : "Provera ",
+            "obrazovanjeGrad" : "provera",
+            "obrazovanjeAdresa" : "provera"
+        }
+    ],
+    "korime" : "mare",
+    "ime" : "Marko",
+    "prezime" : "Markovic",
+    "mail" : "mare@mail.com",
+    "telefon" : "0648569321",
+    "grad" : "Beograd",
+    "adresa" : "Nehruova 67",
+    "sajt" : "mare.com",
+    "datumRodjenja" : ISODate("1996-04-01T22:00:00.000Z"),
+    "maternjiJezik" : "Srpski",
+    "straniJezici" : "Engleski, Nemacki",
+    "komunikacioneVestine" : "Dobre komunikacione veštine stecene kroz radno iskustvo na poziciji menadžera prodaje.",
+    "organizacioneVestine" : "Upravljacke veštine.",
+    "poslovneVestine" : "Dobro upravljanje procesima kontrole kvaliteta.",
+    "digitalneVestine" : "Dobro upravljanje software-ima uredivanja fotografija steceno amaterskim bavljenjem fotografijom.",
+    "__v" : 0
+}

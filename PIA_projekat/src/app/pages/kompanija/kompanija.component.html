@@ -1,0 +1,112 @@
+<h2 style = "text-align: center;"> Dobrodosli, {{naziv}}! </h2>
+<hr>
+
+<div  style = "text-align: center;">
+    <img [src] ="putanjaSlike" /> 
+</div>
+
+
+
+<p-tabView  [style]="{'font-size': '17px' }">
+      <p-tabPanel header="Otvori konkurs"  [headerStyle]="{'background-color':'#A4C2A5'}">
+            <form [formGroup]="form" (submit)="submit()" style = "margin:0 auto;  width:75%;  border: 2px solid #5E5656; padding:20px; background-color: #D8DAD3;">
+               <div class = "ui-g">
+                  <div class = "ui-g-2">
+                     <label> Pozicija: </label>
+                  </div>
+                  <div class = "ui-g-10">
+                        <input type ="text" style = "width: 100%;" pInputText name = "ime" formControlName = "pozicija"/>
+                  </div>
+                  <div class = "ui-g-2">
+                        <label> Tekst konkursa: </label>
+                     </div>
+                     <div class = "ui-g-10" style = "height :90px;">
+                           <textarea style = "width: 100%; height: 100%" name = "tekst" formControlName = "tekst"> </textarea>
+                           
+                     </div>
+
+                    
+                           
+                     <div class = "ui-g-2">
+                             
+                              
+                           <label> Rok prijave: </label>
+                        </div>
+                        <div class = "ui-g-10">
+                              <p-calendar  dateFormat="dd.mm.yy" hourFormat="24" [showTime]="true" formControlName = "datum"></p-calendar>
+                        </div>
+                     </div>
+                     <hr>
+                        <div style = "text-align: center;">
+                              <p-fileUpload mode="basic"  (onUpload)="onBasicUpload($event)"></p-fileUpload>
+
+                        </div>
+
+                           <hr>
+                           <hr>
+                           <hr>
+                           <div  style = "text-align:center;">
+                                    <div class="ui-g" style=" text-align: center;">
+                                                <div class="ui-g-12"><p-radioButton name="group1" value="zaposlenje" label="Zaposlenje" formControlName = "tipKonkursa" inputId="opt1"></p-radioButton></div>
+                                                <div class="ui-g-12"><p-radioButton name="group1" value="praksa" label="Strucna praksa" formControlName = "tipKonkursa" inputId="opt2"></p-radioButton></div>
+                                            </div>
+                                      
+
+                        </div>
+                        <div class="form-group" style ="text-align: center;">
+                              <label style = "color:red;"> {{poruka}}</label>
+                              <hr>
+                              <hr>
+                              <button  type="submit" style = "font-weight: bold; color: #5E5656;border: 1px solid #5E5656;" pButton label="Napravi konkurs" class="ui-button-rounded ui-button-secondary">
+                                </button>
+                            </div>
+              
+            
+            
+            </form>
+      </p-tabPanel>
+      <p-tabPanel header="Zavrseni konkursi"  [headerStyle]="{'background-color':'#A4C2A5'}">
+            <form>
+            <div class = "ui-g" *ngFor = "let n of prijavePrikaz">
+                        <div class = "ui-g-12" #korimeHtml > {{n.korime}}</div>
+                        <div class = "ui-g-12"> <b> Ime : </b>  {{n.biografija.ime}}</div>
+                        <div class = "ui-g-12"> <b>Prezime: </b> {{n.biografija.prezime}}</div>
+                        
+                        <div class = "ui-g-12"><b>  Pozicija : </b>  {{n.konkurs.pozicija}}</div>
+                        <div class = "ui-g-12"><b>  Cover letter : </b>  {{n.cl}}</div>
+
+                  <hr>
+                  <hr>
+            </div>
+
+            
+            <hr>
+            <div class = "ui-g" style = "border: 1px solid #797B84; background-color: #EDC9C4">
+                        <div class = "ui-g-12">  <b>POSALJI ODGOVOR</b></div>
+                  <div class = "ui-g-3">
+                        Za studenta:
+                  </div>
+                  <div class = "ui-g-9">
+                        <select style = "width:100%; font-size:17px;" name = "selektovaniStudent" [(ngModel)] = "selektovaniStudent">
+                              <option *ngFor = "let prijava of prijavePrikaz" [value] = "prijava._id">
+                                    {{prijava.korime}} {{prijava.konkurs.pozicija}}
+
+                              </option>
+                        </select>
+                  </div>
+                  <div class = "ui-g-6">
+                        <button style = "font-weight: bold; color: #5E5656;border: 1px solid #5E5656;" pButton label="Prihvati" class="ui-button-rounded ui-button-secondary" (click) = "prihvati()"></button>
+                 
+                  </div>
+
+                  <div class ="ui-g-6">
+                              <button style = "font-weight: bold; color: #5E5656;border: 1px solid #5E5656;" pButton label="Odbij" class="ui-button-rounded ui-button-secondary" (click) = "odbij()"></button>
+
+                  </div>
+            </div>
+
+      
+      </form>
+      </p-tabPanel>
+    
+  </p-tabView>

@@ -1,0 +1,35 @@
+
+
+<h2 style = "text-align: center;"> Podaci o kompaniji {{kompanija.naziv}}</h2>
+<hr>
+
+<div  style = "text-align: center;">
+    <img [src] ="putanjaSlike" /> 
+</div>
+<hr>
+<hr>
+
+
+<div class = "ui-g" style = "text-align:center;margin:auto 0; width:100%;">
+    <div class = "ui-g-12" > <b>Naziv : </b>{{kompanija.naziv}}</div>
+    <div class = "ui-g-12" > <b>Mail:</b> {{kompanija.mail}}</div>
+    <div class = "ui-g-12"> <b>Grad i adresa:</b> {{kompanija.grad}}, {{kompanija.adresa}}</div>
+    <div class = "ui-g-12"><b>Broj zaposlenih:</b> {{kompanija.brojZaposlenih}}</div>
+    <div class = "ui-g-12"><b>Delatnosti: </b> {{kompanija.delatnost}}</div>
+    <div class = "ui-g-12"> <b>Uza specijalnost:</b> {{kompanija.uzaSpecijalnost}}</div>
+</div>
+
+<hr>
+<h3 style = "text-align: center;"> Otvoreni konkursi </h3>
+
+<div class = "ui-g" style = "font-weight:bold;margin:auto 0; width:100%; border:1px solid  #5E5656;border-collapse: collapse; background-color:#D8DAD3;"*ngIf = "konkursi.length>0">
+        <div class = "ui-g-4" style = "border:1px solid #5E5656;">Pozicija</div>
+        <div class = "ui-g-4" style = "border:1px solid #5E5656;">Tekst</div>
+        <div class = "ui-g-4"style = "border:1px solid #5E5656;">Datum</div>
+    </div>
+<div class = "ui-g" style = "margin:auto 0; width:100%; border-collapse: collapse;border:1px solid #5E5656; background-color:#F1F2EB;"*ngFor = "let n of konkursi">
+        <div class = "ui-g-4" style = "border:1px solid #5E5656;">{{n.pozicija}}</div>
+        <div class = "ui-g-4" style = "border:1px solid #5E5656;">{{n.tekst}}</div>
+        <div class = "ui-g-4"style = "border:1px solid #5E5656;">{{n.datum}}</div>
+       
+    </div>

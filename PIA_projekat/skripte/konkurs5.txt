@@ -1,0 +1,8 @@
+{
+    "pozicija" : "ART DIRECTOR",
+    "tekst" : "In this role, you will be accountable for the coherent direction and artistic vision of your project. You are expected to champion quality benchmarks working closely with product, design, tech and production teams to define what is possible and push to redefine industry standards. The team will look to you as an inspirational leader who is able to motivate and guide as well as being flexible, calm and approachable.",
+    "datum" : "2019-01-04T13:30:45.000Z",
+    "tipKonkursa" : "zaposlenje",
+    "kompanija" : "Nordeus",
+    "__v" : 0
+}

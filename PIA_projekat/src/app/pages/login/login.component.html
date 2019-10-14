@@ -1,0 +1,38 @@
+
+<form  style = "margin:0 auto; margin-top:80px; width:400px;  border: 2px solid #5E5656; padding:20px; background-color: #D8DAD3;text-align:center;">
+    <table style = "border-spacing: 0 20px; width:350px;" >
+        <tr class= "trClass">
+            <div class="alert" *ngIf = "prikaziPoruku">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                {{poruka}}
+              </div>
+        </tr>
+        <tr style = "text-align: center; ">
+            Korisnicko ime:
+        </tr>
+
+        <tr class= "trClass">
+            <input type="text" pInputText name = 'korime' [(ngModel)] = 'korime' />
+        </tr>
+
+        <tr class= "trClass">
+            Lozinka: 
+        </tr>
+
+        <tr class= "trClass">
+            <input type="password" pPassword name = 'lozinka' [(ngModel)] = 'lozinka' required [pattern]="pwdPattern" #pwd="ngModel" />
+            
+        </tr>
+
+        <tr class= "trClass"> 
+            <button style = "font-weight: bold; color: #5E5656;border: 1px solid #5E5656;" (click) = 'login()' pButton type="button" label="ULOGUJTE SE" class="ui-button-rounded ui-button-secondary"></button>
+        </tr>
+
+        <tr class= "trClass" style = "font-weight: bold;" > <a routerLink='/promenaLozinke'>Promeni lozinku </a> </tr>
+        <tr class= "trClass"  style = "font-weight: bold;"> <a routerLink='/register'> REGISTRACIJA </a>  </tr>
+        <tr class= "trClass"  style = "font-weight: bold;"> <a routerLink='/neregistrovani' >Nastavi kao neregistrovani korisnik</a> </tr>
+        
+    </table>
+</form> 
+
+

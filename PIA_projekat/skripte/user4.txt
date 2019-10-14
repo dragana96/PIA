@@ -1,0 +1,17 @@
+{
+    
+    "naziv" : "Microsoft",
+    "korime" : "microsoft",
+    "lozinka" : "Micro123$",
+    "grad" : "Beograd",
+    "adresa" : "Bulevar Mihajla Pupina 165v",
+    "direktor" : "Zeljko Vujinovic",
+    "mail" : "microsoft@mail.com",
+    "tip" : "kompanija",
+    "PIB" : "123456",
+    "brojZaposlenih" : "210",
+    "delatnost" : "IT",
+    "uzaSpecijalnost" : "Razvoj softvera",
+    "putanjaSlika" : "http://localhost:3000/images/microsoft.png",
+    "__v" : 0
+}

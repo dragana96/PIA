@@ -1,0 +1,86 @@
+{
+
+    "korime" : "mare",
+    "biografija" : {
+        "radnaIskustva" : [ 
+            {
+                "radnoIskustvoOd" : "2015-01-09T23:00:00.000Z",
+                "radnoIskustvoDo" : "2017-02-03T23:00:00.000Z",
+                "radnoIskustvoPozicija" : "IT Tehnicka podrška",
+                "radnoIskustvoAktivnosti" : " Instalacija i konfiguracija racunara, obuka zaposlenih u banci za korišcenje softvera ",
+                "radnoIskustvoPoslodavac" : "Instruments Support Company",
+                "radnoIskustvoAdresa" : "Ugrinovacka 37",
+                "radnoIskustvoSajt" : "isc.com"
+            }, 
+            {
+                "radnoIskustvoOd" : "2017-03-08T23:00:00.000Z",
+                "radnoIskustvoDo" : "2019-01-31T23:00:00.000Z",
+                "radnoIskustvoPozicija" : " Rukovodilac prodaje",
+                "radnoIskustvoAktivnosti" : "Identifikovanje potreba potrošaca ",
+                "radnoIskustvoPoslodavac" : "Monitor Publikacije ",
+                "radnoIskustvoAdresa" : "Krunska 26",
+                "radnoIskustvoSajt" : "mp.com"
+            }
+        ],
+        "obrazovanja" : [ 
+            {
+                "obrazovanjeOd" : "2003-08-31T22:00:00.000Z",
+                "obrazovanjeDo" : "2011-07-23T22:00:00.000Z",
+                "obrazovanjeUstanova" : "OS Jovan Sterija Popovic",
+                "obrazovanjeGrad" : "Beograd",
+                "obrazovanjeAdresa" : "Nehruova"
+            }, 
+            {
+                "obrazovanjeOd" : "2011-08-31T22:00:00.000Z",
+                "obrazovanjeDo" : "2015-06-24T22:00:00.000Z",
+                "obrazovanjeUstanova" : "Deveta gimnazija \"Mihailo Petrovic Alas\"",
+                "obrazovanjeGrad" : "Beograd",
+                "obrazovanjeAdresa" : "Pariske komune"
+            }, 
+            {
+                "obrazovanjeOd" : "2015-06-30T22:00:00.000Z",
+                "obrazovanjeDo" : "2019-02-09T23:00:00.000Z",
+                "obrazovanjeUstanova" : "Elektrotehnicki fakultet",
+                "obrazovanjeGrad" : "Beograd",
+                "obrazovanjeAdresa" : "Bulevar Kralja Aleksandra 73"
+            }, 
+            {
+                "obrazovanjeOd" : "2019-02-03T23:00:00.000Z",
+                "obrazovanjeDo" : "2019-02-02T23:00:00.000Z",
+                "obrazovanjeUstanova" : "Provera ",
+                "obrazovanjeGrad" : "provera",
+                "obrazovanjeAdresa" : "provera"
+            }
+        ],
+        "_id" : "5c6099458da8e60a7837bf7d",
+        "korime" : "mare",
+        "ime" : "Marko",
+        "prezime" : "Markovic",
+        "mail" : "mare@mail.com",
+        "telefon" : "0648569321",
+        "grad" : "Beograd",
+        "adresa" : "Nehruova 67",
+        "sajt" : "mare.com",
+        "datumRodjenja" : "1996-04-01T22:00:00.000Z",
+        "maternjiJezik" : "Srpski",
+        "straniJezici" : "Engleski, Nemacki",
+        "komunikacioneVestine" : "Dobre komunikacione veštine stecene kroz radno iskustvo na poziciji menadžera prodaje.",
+        "organizacioneVestine" : "Upravljacke veštine.",
+        "poslovneVestine" : "Dobro upravljanje procesima kontrole kvaliteta.",
+        "digitalneVestine" : "Dobro upravljanje software-ima uredivanja fotografija steceno amaterskim bavljenjem fotografijom.",
+        "__v" : 0
+    },
+    "konkurs" : {
+        "_id" : ObjectId("5c618b2f12415010d41fc854"),
+        "pozicija" : "Senior Hardware Engineer",
+        "tekst" : "Microsoft’s Bing Platform Engineering team is seeking highly motivated, independent hardware design engineers at all career stages to join us in blazing the trail for FPGA-based acceleration at datacenter scale.   By leveraging the huge amounts of fine-grained parallelism delivered by current and future FPGAs, reconfigurable computing can radically accelerate many types of computations.   We are applying this technology to challenging applications important to Microsoft and our customers, including but not limited to Bing search.  Our work includes developing, optimizing, deploying, and maintaining FPGA accelerators, infrastructure, and tools.",
+        "datum" : "2019-02-06T14:00:03.000Z",
+        "tipKonkursa" : "zaposlenje",
+        "kompanija" : "Microsoft",
+        "__v" : 0
+    },
+    "cl" : "Cover letter.....",
+    "status" : "ceka",
+    "pozicija" : "Senior Hardware Engineer",
+    "__v" : 0
+}

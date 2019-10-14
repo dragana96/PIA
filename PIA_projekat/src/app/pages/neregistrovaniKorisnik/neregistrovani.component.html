@@ -1,0 +1,44 @@
+<h3 style = "text-align: center;"> Neregistrovani korisnik</h3>
+<hr>
+<hr>
+
+<form style = "margin:0 auto; margin-top:60px; width:60%;  border: 2px solid #5E5656; padding:20px; background-color: #D8DAD3;"> 
+    <div class ="ui-g" >
+        <div class = "ui-g-2">Unesite naziv kompanije: </div> 
+        <div class = "ui-g-10"> <input style = "width:100%;" type = "text" pInputText name ="naziv" [(ngModel)]="nazivKompanije" [ngModelOptions]="{standalone: true}"></div>
+        <div class = "ui-g-2">Izaberite delatnost/i:</div>
+        <div class = "ui-g-10">
+                <p-multiSelect [options]="delatnosti"  [(ngModel)]="selektovaneDelatnosti" [ngModelOptions]="{standalone: true}" [panelStyle]="{minWidth:'12em'}"></p-multiSelect>
+        </div>
+        <div class = "ui-g-2">Unesite grad: </div>
+      
+        <div class = "ui-g-10"> <input type = "text" style = "width:100%;" pInputText name ="naziv" [(ngModel)]="nazivGrada" [ngModelOptions]="{standalone: true}"> </div>
+        <div class = "ui-g-12" style = "text-align: center;">
+                <button  style = "font-weight: bold; color: #5E5656;border: 1px solid #5E5656; text-align: center; " (click) = 'pretrazi()' pButton type="button" label="PRETRAZI" class="ui-button-rounded ui-button-secondary"></button>
+            </div>
+        <hr>
+
+       
+    </div>
+
+
+</form>
+<hr>
+
+
+<div class = "ui-g" style = "font-weight:bold;margin:auto 0; width:100%; border:1px solid  #5E5656;border-collapse: collapse; background-color:#D8DAD3;"*ngIf = "prikazKompanija.length>0">
+        <div class = "ui-g-1"style = "border:1px solid #5E5656;">Naziv</div>
+        <div class = "ui-g-2"style = "border:1px solid #5E5656;">E-mail</div>
+        <div class = "ui-g-3" style = "border:1px solid #5E5656;">Grad i adresa</div>
+        <div class = "ui-g-1"style = "border:1px solid #5E5656;">Broj zaposlenih</div>
+        <div class = "ui-g-2"style = "border:1px solid #5E5656;">Delatnost</div>
+        <div class = "ui-g-3"style = "border:1px solid #5E5656;">Uza specijalnost</div>
+    </div>
+<div class = "ui-g" style = "margin:auto 0; width:100%; border-collapse: collapse;border:1px solid #5E5656; background-color:#F1F2EB;"*ngFor = "let n of prikazKompanija">
+    <div class = "ui-g-1" style = "border:1px solid #5E5656;">{{n.naziv}}</div>
+    <div class = "ui-g-2" style = "border:1px solid #5E5656;">{{n.mail}}</div>
+    <div class = "ui-g-3"style = "border:1px solid #5E5656;">{{n.grad}}, {{n.adresa}}</div>
+    <div class = "ui-g-1"style = "border:1px solid #5E5656;">{{n.brojZaposlenih}}</div>
+    <div class = "ui-g-2"style = "border:1px solid #5E5656;">{{n.delatnost}}</div>
+    <div class = "ui-g-3"style = "border:1px solid #5E5656;">{{n.uzaSpecijalnost}}</div>
+</div>

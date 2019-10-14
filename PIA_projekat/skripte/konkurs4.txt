@@ -1,0 +1,8 @@
+{
+    "pozicija" : "zavrsen",
+    "tekst" : "zavrsen",
+    "datum" : "2019-01-15T06:01:37.000Z",
+    "tipKonkursa" : "zaposlenje",
+    "kompanija" : "Nordeus",
+    "__v" : 0
+}

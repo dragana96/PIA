@@ -1,0 +1,145 @@
+<h3 style ="text-align: center"> Promena lozinke </h3>
+<form [formGroup] = "frmChange" style = "margin:0 auto; margin-top:80px; width:400px;  border: 2px solid #5E5656; padding:20px; background-color: #D8DAD3;">
+        <table style = "border-spacing: 0 20px; width:350px;" >
+            <tr class= "trClass">
+                <div class="alert"  *ngIf = "poruka">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                    {{poruka}}
+                  </div>
+                 <div *ngIf = "uspeh" >
+                        <p-message severity="success" text="Uspesno promenjena lozinka!"></p-message>
+                 </div>
+            </tr>
+            <tr style = "text-align: center; ">
+                Korisnicko ime:
+            </tr>
+    
+            <tr class= "trClass">
+                <input type="text" pInputText name = 'korime' formControlName = 'korime' />
+            </tr>
+    
+            <tr class= "trClass">
+                Lozinka: 
+            </tr>
+    
+            <tr class= "trClass">
+                <input type="password" pPassword name = 'lozinka' formControlName = 'lozinka'  />
+                
+            </tr>
+
+            <tr class= "trClass">
+                    Unesi novu lozinku: 
+                </tr>
+        
+                <tr class= "trClass">
+                    <input type="password" pPassword name = 'novaLozinka' formControlName = 'password'  />
+                    <hr>
+
+                    <label >
+                        
+                            <ng-template *ngIf = "frmChange.controls['password'].hasError('required') || frmChange.controls['password'].hasError('minlength') || frmChange.controls['password'].hasError('maxlength'); then nista0; else upozorenje0 ">
+                             </ng-template>
+                          
+                          <ng-template #nista0> 
+                              <p-message severity="error" text=" Mora imati od 8 do 12 slova!"></p-message>
+                       </ng-template>
+                          
+                    </label>
+              
+                       <hr>
+                      
+                      <label >
+                        
+                          <ng-template *ngIf = "frmChange.controls['password'].hasError('required') ||
+                          frmChange.controls['password'].hasError('hasNumber'); then nista; else upozorenje ">
+                        </ng-template>
+                   <!--   <ng-template #upozorenje><p-message severity="success" text="Ima jednu cifru!"></p-message></ng-template> -->
+                        <ng-template #nista> <p-message severity="error" text=" Mora imati bar jednu cifru"></p-message></ng-template>
+                        
+                      </label>
+                      <hr/>
+
+                      <label >
+                        
+                            <ng-template *ngIf = "frmChange.controls['password'].hasError('required') ||
+                            frmChange.controls['password'].hasError('hasCapitalCase'); then nista1; else upozorenje1 ">
+                             </ng-template>
+                     
+                          <ng-template #nista1> <p-message severity="error" text=" Mora imati bar jedno veliko slovo!"></p-message></ng-template>
+                          
+                    </label>
+                    <hr>
+
+                    <label >
+                        
+                            <ng-template *ngIf = "frmChange.controls['password'].hasError('required') ||
+                            frmChange.controls['password'].hasError('hasSmallCase'); then nista2; else upozorenje2 ">
+                             </ng-template>
+                         
+                          <ng-template #nista2><p-message severity="error" text=" Mora imati bar 3 mala slova!"></p-message></ng-template>
+                          
+                    </label>
+                    <hr>
+
+                    <label >
+                        
+                            <ng-template *ngIf = "frmChange.controls['password'].hasError('required') ||
+                            frmChange.controls['password'].hasError('firstChar'); then nista3; else upozorenje3 ">
+                             </ng-template>
+                         
+                          <ng-template #nista3> <p-message severity="error" text=" Mora poceti slovom!"></p-message></ng-template>
+                          
+                    </label>
+                    <hr>
+
+                   <label >
+                        
+                            <ng-template *ngIf = "frmChange.controls['password'].hasError('required') ||
+                            frmChange.controls['password'].hasError('noTwoSameConsecutive'); then netacnoIma; else tacnoNema ">
+                             </ng-template>
+                         
+                          <ng-template #netacnoIma> <p-message severity="error" text=" Ne sme imati 2 ista uzastopna znaka"></p-message> </ng-template>
+                          
+                    </label>
+                    <hr>
+ 
+                    <label >
+                        
+                            <ng-template *ngIf = "frmChange.controls['password'].hasError('required') ||
+                            frmChange.controls['password'].hasError('hasSpecialCharacters'); then nista4; else upozorenje4 ">
+                             </ng-template>
+                         
+                          <ng-template #nista4> <p-message severity="error" text=" Mora imati 1 specijalan znak"></p-message> </ng-template>
+                          
+                    </label>
+                                               
+                    
+
+
+                  
+                    
+                </tr>
+
+                <tr class ="trClass">
+                <label> Potvrdi lozinku:</label> 
+                <hr>
+                 <input pInputText  id="confirmPassword" formControlName="confirmPassword" type="password" class="form-control"
+                        [ngClass]="frmChange.controls['confirmPassword'].invalid ? 'is-invalid' : ''">
+                        <hr>
+                      <label *ngIf="frmChange.controls['confirmPassword'].hasError('required')">
+                              <p-message severity="error" text=" Morate potvrditi lozinku!"> </p-message>
+                      </label>
+                      <label *ngIf="frmChange.controls['confirmPassword'].hasError('NoPassswordMatch')">
+                              <p-message severity="error" text=" Lozinke se ne podudaraju!"> </p-message>
+                      </label>
+                </tr>
+    
+            <tr class= "trClass"> 
+                <button style = "font-weight: bold; color: #5E5656;border: 1px solid #5E5656;" (click) = 'promeniLozinku()' pButton type="button" label="PROMENI LOZINKU" class="ui-button-rounded ui-button-secondary"></button>
+            </tr>
+    
+            
+            
+        </table>
+    </form> 
+    

@@ -1,0 +1,407 @@
+<h2 style="text-align: center;"> Dobrodosli, {{ime}} {{prezime}}! </h2>
+<hr>
+
+<div style="text-align: center;">
+        <img [src]="putanjaSlike" />
+</div>
+
+
+
+<p-tabView [style]="{'font-size': '17px' }">
+        <p-tabPanel header="Biografija" [headerStyle]="{'background-color':'#A4C2A5'}">
+
+                <form [formGroup]="CVform" style="margin:0 auto;  width:75%;  border: 2px solid #5E5656; padding:20px; background-color: #D8DAD3;">
+
+                        <div style="width: 100%;border: 1px solid #5E5656; background-color: #A4C2A5; text-align: center;">
+                                <p style="text-align: center; font-size: 17px; font-weight: bold;"> Licne informacije
+                                </p>
+                        </div>
+                        <hr>
+                        <hr>
+                        <div class="ui-g">
+                                <div class="ui-g-3">
+                                        Ime:
+                                </div>
+                                <div class="ui-g-3">
+                                        <input type="text" formControlName='ime' pInputText name="ime" [value]="ime" />
+                                </div>
+
+                                <div class="ui-g-3">
+                                        Prezime:
+                                </div>
+                                <div class="ui-g-3">
+                                        <input type="text" pInputText name="prezime" formControlName="prezime" [value]="prezime" />
+                                </div>
+                        </div>
+                        <div class="ui-g">
+
+                                <div class="ui-g-3">
+                                        E-mail:
+                                </div>
+                                <div class="ui-g-3">
+                                        <input type="text" pInputText name="mail" formControlName="mail" [value]="mail" />
+                                </div>
+
+                                <div class="ui-g-3">
+                                        Broj telefona:
+                                </div>
+                                <div class="ui-g-3">
+                                        <input type="text" pInputText name="telefon" formControlName="telefon" [value]="telefon" />
+                                </div>
+
+
+
+
+                        </div>
+
+
+                        <div class="ui-g">
+
+                                <div class="ui-g-2">
+                                        Unesite grad:
+                                </div>
+
+                                <div class="ui-g-10">
+                                        <input type="text" formControlName="grad" style="width:100%;" pInputText name="grad" />
+                                </div>
+
+                                <div class="ui-g-2">
+                                        Unesite adresu:
+                                </div>
+
+                                <div class="ui-g-10">
+                                        <input style="width:100%;" formControlName="adresa" type="text" pInputText name="adresa" />
+                                </div>
+
+
+
+                                <div class="ui-g-2">
+                                        Unesite ličnu internet stranicu:
+                                </div>
+
+                                <div class="ui-g-10">
+                                        <input style="width:100%;" type="text" formControlName="sajt" pInputText name="sajt" />
+                                </div>
+
+                                <div class="ui-g-2">
+                                        Datum rodjenja:
+                                </div>
+                                <div class="ui-g-10 ui-md-4">
+
+                                        <p-calendar formControlName="datumRodjenja"></p-calendar>
+                                </div>
+
+                        </div>
+                        <hr>
+                        <hr>
+
+
+                        <div style="width: 100%;border: 1px solid #5E5656; background-color: #A4C2A5; text-align: center;">
+                                <p style="text-align: center; font-size: 17px; font-weight: bold;"> Radno iskustvo </p>
+                        </div>
+                        <hr>
+                        <div formArrayName="radnaIskustva">
+                                <div class="ui-g" style="border-bottom: 1px solid #5E5656" *ngFor="let radnoIskustvo of radnaIskustvaRet.controls; let i=index"
+                                        [formGroupName]="i">
+                                        <div class="ui-g-2">
+                                                Od:
+                                        </div>
+
+                                        <div class="ui-g-10 ui-md-4">
+
+                                                <p-calendar formControlName="radnoIskustvoOd"></p-calendar>
+                                        </div>
+
+                                        <div class="ui-g-2">
+                                                Do:
+                                        </div>
+                                        <div class="ui-g-10 ui-md-4">
+
+                                                <p-calendar formControlName="radnoIskustvoDo"></p-calendar>
+                                        </div>
+
+                                        <div class="ui-g-2">
+                                                Pozicija:
+                                        </div>
+
+                                        <div class="ui-g-10">
+                                                <input style="width:100%;" formControlName="radnoIskustvoPozicija" type="text"
+                                                        pInputText name="pozicija" />
+                                        </div>
+
+                                        <div class="ui-g-2">
+                                                Glavne aktivnosti i duznosti:
+                                        </div>
+
+                                        <div class="ui-g-10">
+                                                <input style="width:100%;" type="text" formControlName="radnoIskustvoAktivnosti"
+                                                        pInputText name="aktivnosti" />
+                                        </div>
+
+                                        <div class="ui-g-2">
+                                                Poslodavac:
+                                        </div>
+
+                                        <div class="ui-g-10">
+                                                <input style="width:100%;" formControlName="radnoIskustvoPoslodavac"
+                                                        type="text" pInputText name="poslodavac" />
+                                        </div>
+
+                                        <div class="ui-g-2">
+                                                Adresa:
+                                        </div>
+
+                                        <div class="ui-g-10">
+                                                <input style="width:100%;" formControlName="radnoIskustvoAdresa" type="text"
+                                                        pInputText name="adresa" />
+                                        </div>
+                                        <div class="ui-g-2">
+                                                Internet stranica:
+                                        </div>
+
+                                        <div class="ui-g-10">
+                                                <input style="width:100%;" type="text" formControlName="radnoIskustvoSajt"
+                                                        pInputText name="internetStranica" />
+                                        </div>
+                                </div>
+                        </div>
+
+                        <hr>
+                        <div style="text-align: center;">
+                                <button pButton type="button" label="+" class="ui-button-rounded ui-button-danger"
+                                        (click)="dodajRadnoIskustvo()"></button>
+                        </div>
+                        <hr>
+                        <hr>
+
+
+                        <div style="width: 100%;border: 1px solid #5E5656; background-color: #A4C2A5; text-align: center;">
+                                <p style="text-align: center; font-size: 17px; font-weight: bold;"> Obrazovanje i
+                                        osposobljavanje </p>
+                        </div>
+                        <hr>
+
+                        <div formArrayName="obrazovanja">
+                                <div class="ui-g" style="border-bottom: 1px solid #5E5656" *ngFor="let obrazovanje of obrazovanjaRet.controls; let i=index"
+                                        [formGroupName]="i">
+                                        <div class="ui-g-2">
+                                                Od:
+                                        </div>
+
+                                        <div class="ui-g-10 ui-md-4">
+
+                                                <p-calendar formControlName="obrazovanjeOd"></p-calendar>
+                                        </div>
+
+                                        <div class="ui-g-2">
+                                                Do:
+                                        </div>
+                                        <div class="ui-g-10 ui-md-4">
+
+                                                <p-calendar formControlName="obrazovanjeDo"></p-calendar>
+                                        </div>
+
+                                        <div class="ui-g-2">
+                                                Ustanova:
+                                        </div>
+
+                                        <div class="ui-g-10">
+                                                <input style="width:100%;" type="text" formControlName="obrazovanjeUstanova"
+                                                        pInputText name="ustanova" />
+                                        </div>
+
+                                        <div class="ui-g-2">
+                                                Grad:
+                                        </div>
+
+                                        <div class="ui-g-10">
+                                                <input style="width:100%;" type="text" formControlName="obrazovanjeGrad"
+                                                        pInputText name="gradUstanove" />
+                                        </div>
+
+                                        <div class="ui-g-2">
+                                                Adresa ustanove:
+                                        </div>
+
+                                        <div class="ui-g-10">
+                                                <input style="width:100%;" formControlName="obrazovanjeAdresa" type="text"
+                                                        pInputText name="adresaUstanove" />
+                                        </div>
+
+
+                                </div>
+
+                        </div>
+                        <hr>
+                        <div style="text-align: center;">
+                                <button pButton type="button" label="+" class="ui-button-rounded ui-button-danger"
+                                        (click)="dodajObrazovanje()"></button>
+                        </div>
+                        <hr>
+                        <div style="width: 100%;border: 1px solid #5E5656; background-color: #A4C2A5; text-align: center;">
+                                <p style="text-align: center; font-size: 17px; font-weight: bold;"> Licne vestine </p>
+                        </div>
+                        <hr>
+
+                        <div class="ui-g">
+                                <div class="ui-g-2">
+                                        Maternji jezik:
+                                </div>
+
+                                <div class="ui-g-10">
+                                        <input style="width:100%;" type="text" formControlName="maternjiJezik"
+                                                pInputText name="maternji" />
+                                </div>
+
+
+                                <div class="ui-g-2">
+                                        Strani jezici:
+                                </div>
+
+                                <div class="ui-g-10">
+                                        <input style="width:100%;" type="text" formControlName="straniJezici"
+                                                pInputText name="strani" />
+                                </div>
+
+
+                                <div class="ui-g-2">
+                                        Komunikacione vestine:
+                                </div>
+
+                                <div class="ui-g-10">
+                                        <textarea style="width:80%; height:100%;" formControlName="komunikacioneVestine">
+
+                                                        </textarea>
+                                        <hr>
+                                        <hr>
+                                        <hr>
+                                        <hr>
+                                </div>
+
+                                <div class="ui-g-2">
+                                        Organizacione vestine:
+                                </div>
+
+                                <div class="ui-g-10">
+                                        <textarea style="width:80%; height:100%;" formControlName="organizacioneVestine">
+
+                                                </textarea>
+                                        <hr>
+                                        <hr>
+                                        <hr>
+                                </div>
+
+
+
+                                <div class="ui-g-2">
+                                        Poslovne vestine:
+                                </div>
+
+                                <div class="ui-g-10">
+                                        <textarea style="width:80%; height:100%;" formControlName="poslovneVestine">
+
+                                                </textarea>
+                                        <hr>
+                                        <hr>
+                                        <hr>
+                                </div>
+
+
+
+
+                                <div class="ui-g-2">
+                                        Digitalne vestine:
+                                </div>
+
+                                <div class="ui-g-10">
+                                        <textarea style="width:80%; height:100%;" formControlName="digitalneVestine">
+
+                                            </textarea>
+                                        <hr>
+                                        <hr>
+                                        <hr>
+                                </div>
+                        </div>
+                        <hr>
+
+                        <div class="form-group" style="text-align: center;">
+                                <label style="color:red;">{{poruka}}</label>
+                                <hr>
+                                <button (click)="submit()" style="font-weight: bold; color: #5E5656;border: 1px solid #5E5656;"
+                                        *ngIf="pronadjenaBiografija === false" pButton label="Dodaj CV" class="ui-button-rounded ui-button-secondary">
+                                </button>
+
+                                <button (click)="izmeni()" style="font-weight: bold; color: #5E5656;border: 1px solid #5E5656;"
+                                        *ngIf="pronadjenaBiografija === true" pButton label="Izmeni CV" class="ui-button-rounded ui-button-secondary">
+                                </button>
+                        </div>
+                </form>
+        </p-tabPanel>
+        <p-tabPanel header="Pretraga" [headerStyle]="{'background-color':'#A4C2A5'}">
+                <form [formGroup]="searchForm" style="margin:0 auto;  width:75%;  border: 2px solid #5E5656; padding:20px; background-color: #D8DAD3;">
+
+                        <div class = "ui-g">
+                                <div class = "ui-g-2">
+                                        <label>Unesite naziv kompanije: </label> 
+                                </div>
+
+                                <div class = "ui-g-10">
+                                                <input style="width:100%;" type="text" formControlName="kompanija"
+                                                pInputText name="kompanija" />
+                                                
+                                </div>    
+                                
+                                <div class = "ui-g-2">
+                                                <label>Unesite poziciju: </label> 
+                                        </div>
+        
+                                        <div class = "ui-g-10">
+                                                        <input style="width:100%;" type="text" formControlName="pozicija"
+                                                        pInputText name="pozicija" />   
+                                        </div>
+
+                                        <div class = "ui-g-2">
+                                                        <label>Izaberite: </label> 
+                                                </div>
+                
+                                                <div class = "ui-g-10">
+                                                                <p-multiSelect [options]="tipovi"  [(ngModel)]="selektovaniTipovi" [ngModelOptions]="{standalone: true}" [panelStyle]="{minWidth:'12em'}"></p-multiSelect>
+  
+                                                </div>
+
+                                                <div class = "ui-g-12" style = "text-align: center;">
+                                                                <button  style = "font-weight: bold; color: #5E5656;border: 1px solid #5E5656; text-align: center; " (click) = 'pretraziKonkurse()' pButton type="button" label="PRETRAZI" class="ui-button-rounded ui-button-secondary"></button>
+
+                                                        
+                                                        
+                                                        </div>
+                        </div>
+
+                </form>
+
+
+
+                <hr>
+                <div class = "ui-g" style = "font-weight:bold;margin:auto 0; width:100%; border:1px solid  #5E5656;border-collapse: collapse; background-color:#D8DAD3;"*ngIf = "prikazKonkursi.length>0">
+                                <div class = "ui-g-4"style = "border:1px solid #5E5656;">Kompanija</div>
+                                <div class = "ui-g-4"style = "border:1px solid #5E5656;">Pozicija</div>
+                                
+                                <div class = "ui-g-4" style = "border:1px solid #5E5656;">Vise informacija</div>
+                                
+                                
+                            </div>
+                        <div class = "ui-g" style = "margin:auto 0; width:100%; border-collapse: collapse;border:1px solid #5E5656; background-color:#F1F2EB;"*ngFor = "let n of prikazKonkursi">
+                            <div class = "ui-g-4" style = "border:1px solid #5E5656;" #kompanija>{{n.kompanija}}</div>
+                            <div class = "ui-g-4" style = "border:1px solid #5E5656;" #pozicija>{{n.pozicija}}</div>
+                            
+                            <div class = "ui-g-4"style = "border:1px solid #5E5656;"> <button  style = "padding:8px;font-weight: bold; color: #5E5656;border: 1px solid #5E5656; text-align: center; " (click) = 'informacijeKompanija(kompanija)' pButton type="button" class="ui-button-rounded ui-button-secondary"> Klikni za vise informacija o kompaniji</button> 
+                                <button  style = "padding:8px;font-weight: bold; color: #5E5656;border: 1px solid #5E5656; text-align: center; " (click) = 'informacijeKonkurs(pozicija)' pButton type="button" class="ui-button-rounded ui-button-secondary"> Klikni za vise informacija o konkursu</button> </div>
+
+
+                            
+                        </div>
+
+                
+        </p-tabPanel>
+        
+</p-tabView>

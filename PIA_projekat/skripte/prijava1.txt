@@ -1,0 +1,86 @@
+{
+    
+    "korime" : "mare",
+    "biografija" : {
+        "radnaIskustva" : [ 
+            {
+                "radnoIskustvoOd" : "2015-01-09T23:00:00.000Z",
+                "radnoIskustvoDo" : "2017-02-03T23:00:00.000Z",
+                "radnoIskustvoPozicija" : "IT Tehnicka podrška",
+                "radnoIskustvoAktivnosti" : " Instalacija i konfiguracija racunara, obuka zaposlenih u banci za korišcenje softvera ",
+                "radnoIskustvoPoslodavac" : "Instruments Support Company",
+                "radnoIskustvoAdresa" : "Ugrinovacka 37",
+                "radnoIskustvoSajt" : "isc.com"
+            }, 
+            {
+                "radnoIskustvoOd" : "2017-03-08T23:00:00.000Z",
+                "radnoIskustvoDo" : "2019-01-31T23:00:00.000Z",
+                "radnoIskustvoPozicija" : " Rukovodilac prodaje",
+                "radnoIskustvoAktivnosti" : "Identifikovanje potreba potrošaca ",
+                "radnoIskustvoPoslodavac" : "Monitor Publikacije ",
+                "radnoIskustvoAdresa" : "Krunska 26",
+                "radnoIskustvoSajt" : "mp.com"
+            }
+        ],
+        "obrazovanja" : [ 
+            {
+                "obrazovanjeOd" : "2003-08-31T22:00:00.000Z",
+                "obrazovanjeDo" : "2011-07-23T22:00:00.000Z",
+                "obrazovanjeUstanova" : "OS Jovan Sterija Popovic",
+                "obrazovanjeGrad" : "Beograd",
+                "obrazovanjeAdresa" : "Nehruova"
+            }, 
+            {
+                "obrazovanjeOd" : "2011-08-31T22:00:00.000Z",
+                "obrazovanjeDo" : "2015-06-24T22:00:00.000Z",
+                "obrazovanjeUstanova" : "Deveta gimnazija \"Mihailo Petrovic Alas\"",
+                "obrazovanjeGrad" : "Beograd",
+                "obrazovanjeAdresa" : "Pariske komune"
+            }, 
+            {
+                "obrazovanjeOd" : "2015-06-30T22:00:00.000Z",
+                "obrazovanjeDo" : "2019-02-09T23:00:00.000Z",
+                "obrazovanjeUstanova" : "Elektrotehnicki fakultet",
+                "obrazovanjeGrad" : "Beograd",
+                "obrazovanjeAdresa" : "Bulevar Kralja Aleksandra 73"
+            }, 
+            {
+                "obrazovanjeOd" : "2019-02-03T23:00:00.000Z",
+                "obrazovanjeDo" : "2019-02-02T23:00:00.000Z",
+                "obrazovanjeUstanova" : "Provera ",
+                "obrazovanjeGrad" : "provera",
+                "obrazovanjeAdresa" : "provera"
+            }
+        ],
+        "_id" : "5c6099458da8e60a7837bf7d",
+        "korime" : "mare",
+        "ime" : "Marko",
+        "prezime" : "Markovic",
+        "mail" : "mare@mail.com",
+        "telefon" : "0648569321",
+        "grad" : "Beograd",
+        "adresa" : "Nehruova 67",
+        "sajt" : "mare.com",
+        "datumRodjenja" : "1996-04-01T22:00:00.000Z",
+        "maternjiJezik" : "Srpski",
+        "straniJezici" : "Engleski, Nemacki",
+        "komunikacioneVestine" : "Dobre komunikacione veštine stecene kroz radno iskustvo na poziciji menadžera prodaje.",
+        "organizacioneVestine" : "Upravljacke veštine.",
+        "poslovneVestine" : "Dobro upravljanje procesima kontrole kvaliteta.",
+        "digitalneVestine" : "Dobro upravljanje software-ima uredivanja fotografija steceno amaterskim bavljenjem fotografijom.",
+        "__v" : 0
+    },
+    "konkurs" : {
+        "_id" : "5c60e1845d02d21394cdb2f6",
+        "pozicija" : "LEAD SOFTWARE ENGINEER",
+        "tekst" : "As a Lead Software Engineer, you will be leading a group of engineers within a small and independent game team. You will be working closely with leads from other disciplines (art, game design and product management etc.), and together guiding the team through new challenges on current and not-yet-existing games. This is a chance to join one of Europe’s most successful studios as its growth reaches a critical point of inflection.",
+        "datum" : "2019-02-15T02:00:08.000Z",
+        "tipKonkursa" : "zaposlenje",
+        "kompanija" : "Nordeus",
+        "__v" : 0
+    },
+    "cl" : "Cover letter...",
+    "status" : "ceka",
+    "pozicija" : "LEAD SOFTWARE ENGINEER",
+    "__v" : 0
+}

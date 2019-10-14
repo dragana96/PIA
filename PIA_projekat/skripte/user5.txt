@@ -1,0 +1,14 @@
+{
+   
+    "korime" : "gaga",
+    "lozinka" : "Gaga123$",
+    "ime" : "Dragana",
+    "prezime" : "Svrkota",
+    "telefon" : "0644688722",
+    "mail" : "gaga@mail.com",
+    "tip" : "student",
+    "godinaStudija" : "4",
+    "diplomirao" : "ne",
+    "putanjaSlika" : "http://localhost:3000/images/gaga.jpg",
+    "__v" : 0
+}

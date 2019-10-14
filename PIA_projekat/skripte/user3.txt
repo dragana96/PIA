@@ -1,0 +1,17 @@
+{
+    
+    "naziv" : "Nordeus",
+    "korime" : "nordeus",
+    "lozinka" : "Nordeus123$",
+    "grad" : "Beograd",
+    "adresa" : "Spanskih boraca 3/3",
+    "direktor" : "Branko Milutinovic",
+    "mail" : "nordeus@mail.com",
+    "tip" : "kompanija",
+    "PIB" : "123456",
+    "brojZaposlenih" : "100",
+    "delatnost" : "IT",
+    "uzaSpecijalnost" : "Razvoj racunarskih igara",
+    "putanjaSlika" : "http://localhost:3000/images/nordeus.jpg",
+    "__v" : 0
+}

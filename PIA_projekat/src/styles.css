@@ -1,0 +1,61 @@
+@import "../node_modules/primeng/resources/primeng.css";
+@import "../node_modules/primeng/resources/themes/nova-light/theme.css";
+@import "../node_modules/primeicons/primeicons.css";
+
+
+
+
+html {
+    background-image: url("./foil.png");
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ 
+}
+
+.button {
+  background-color: #BAA5AA;
+}
+
+.trClass {
+  text-align: center;
+}
+td {
+  padding: 10px;
+}
+
+hr {
+  visibility: hidden;
+  width: 0px;
+}
+.image-preview{
+  height: 7rem;
+
+  margin:1 rem 0;
+  text-align: center;
+
+}
+.image-preview img {
+  height:100%;
+}
+.alert {
+    padding: 20px;
+    background-color: #b33f36; /* Red */
+    color: white;
+    margin-bottom: 15px;
+  }
+  
+  /* The close button */
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* When moving the mouse over the close button */
+  .closebtn:hover {
+    color: black;
+  }

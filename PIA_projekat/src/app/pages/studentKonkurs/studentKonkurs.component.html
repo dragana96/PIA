@@ -1,0 +1,59 @@
+<h2 style = "text-align: center;"> Podaci o konkursu </h2>
+<h3 style = "text-align: center;">{{konkurs.pozicija}} </h3>
+
+<div class = ui-g style = "border : 1px solid #797B84; background-color:#EDC9C4;">
+    <div class = "ui-g-2">
+        <label> <b> Tekst konkursa: </b></label>
+    </div>
+    <div class = "ui-g-10">
+            <label> {{konkurs.tekst}} </label>
+        </div>
+
+</div>
+
+<div class = ui-g style = "border : 1px solid #797B84; background-color:#EDC9C4;">
+       
+    
+            <div class = "ui-g-2">
+                    <label> <b> Rok za prijavu: </b></label>
+                </div>
+                <div class = "ui-g-10">
+                        <label> {{konkurs.datum}} </label>
+                    </div>
+    </div>
+
+
+    <form> 
+        <hr>
+        <h3> Popunjavanje prijave za konkurs </h3>
+        <div class = "ui-g">
+            <label> Cover letter : </label>
+            <div class = "ui-g-12"><textarea [(ngModel)] = "coverLetter" name = "coverLetter" style = "width:100%; height:100px;"> </textarea></div> 
+            
+        </div>
+        <label style = "color: green;"> {{this.poruka}} </label>
+        <hr>
+        <div style = "text-align: center;">
+                <button [disabled] = "proveri()" style = "font-weight: bold; color: #5E5656;border: 1px solid #5E5656;" (click) = 'dodajPrijavu()' pButton type="button" label="Prijavi se" class="ui-button-rounded ui-button-secondary"></button>
+
+        </div>
+
+
+
+
+    </form>
+
+    <hr>
+
+    <h3> Prijavljeni na ovaj konkurs: </h3>
+    <hr>
+    <div class="ui-g" style = "border: 1px solid #5E5656" *ngFor = "let prijava of prijave" > 
+        
+        <div class = "ui-g-12"  style = "border: 1px solid #5E5656"> 
+            Korisnik: {{prijava.korime}}
+        </div>    
+
+        <div class = "ui-g-12" style = "border: 1px solid #5E5656" > 
+               Status: {{prijava.status}}
+            </div> 
+    </div> 

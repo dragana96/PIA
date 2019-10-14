@@ -1,0 +1,9 @@
+{
+    
+    "pozicija" : "GAME DESIGNER",
+    "tekst" : "We seek an exceptional and well-practiced Game Designer to set the bar even higher and raise the overall design quality of our games. The role will require a hands-on approach in game design while understanding the market/competition and development requirements, as well as managing a live player base using data/analytics. More importantly, it will require an expertise in state of the art metagame design, an ability to work effectively in a highly functional design team, a deep understanding of in game economies and a strong passion for our games and cars.\n",
+    "datum" : "2019-02-15T02:00:08.000Z",
+    "tipKonkursa" : "praksa",
+    "kompanija" : "Nordeus",
+    "__v" : 0
+}
